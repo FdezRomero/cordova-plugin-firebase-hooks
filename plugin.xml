@@ -28,10 +28,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <platform name="android">
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
-        <config-file parent="/resources" target="res/values/strings.xml">
+        <edit-config file="res/values/strings.xml" target="/resources" mode="merge">
             <string name="google_app_id">@string/google_app_id</string>
-	 <string name="google_api_key">@string/google_api_key</string>
-        </config-file>
+	    <string name="google_api_key">@string/google_api_key</string>
+        </edit-config>
 
         <hook type="after_prepare" src="hooks/android/copy-google-services.js" />
     </platform>
