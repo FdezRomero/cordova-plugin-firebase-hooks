@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-firebase-hooks",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Cordova firebase plugin starter",
   "cordova": {
     "id": "cordova-plugin-firebase-hooks",
